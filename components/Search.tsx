@@ -53,8 +53,8 @@ const Search = () => {
       {(listOpen || search !== "") && (
         <div className="w-full bg-neutral-900 rounded-md absolute top-14 flex flex-col">
           {movies?.map((movie) => {
-            let url = "https://image.tmdb.org/3/t/p/original";
-            let posterUrl =
+            const url = "https://image.tmdb.org/3/t/p/original";
+            const posterUrl =
               movie.poster_path !== null ? url + movie.poster_path : FallBack;
 
             return (

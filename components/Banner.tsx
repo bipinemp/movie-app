@@ -32,7 +32,7 @@ const Banner = () => {
 
       setImgUrl(movieImgUrl);
     }
-  }, [data, error, imgUrl, setImgUrl]);
+  }, [data, error, imgUrl, setImgUrl, selectedMovie, setSelectedMovie]);
 
   if (loading) {
     return <BannerLoader />;

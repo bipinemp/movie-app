@@ -10,8 +10,8 @@ const CarouselList = ({ movies, handleMovieClick }: Props) => {
   return (
     <>
       {movies?.map((movie) => {
-        let url = "https://image.tmdb.org/3/t/p/original";
-        let posterUrl =
+        const url = "https://image.tmdb.org/3/t/p/original";
+        const posterUrl =
           movie.poster_path !== null ? url + movie.poster_path : Fallback;
         return (
           <div
